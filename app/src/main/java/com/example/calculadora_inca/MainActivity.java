@@ -4,7 +4,7 @@ import android.os.Bundle;
 //importante importar para logCat
 import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.TextView;
 //importante importar button
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     //para las variable de botones colocar btn = btnAccion
     private Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn0,btnSuma, btnMenos, btnMultiplicar, btnDividir;
-
+    private TextView textMostrar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         btnMenos = findViewById(R.id.button_menos);
         btnMultiplicar = findViewById(R.id.button_multiplicar);
         btnDividir = findViewById(R.id.button_dividir);
+        textMostrar = findViewById(R.id.textMostrar);
+
 
         //setOnClickListener() se utiliza para registrar un listener que responde a eventos de clics
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 String textButton = btn1.getText().toString();
                 //Mostrarlo en LogCat
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -56,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btn2.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -64,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btn3.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -72,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btn4.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -80,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btn5.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -88,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btn6.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -96,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btn7.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -104,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btn8.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -112,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btn9.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -120,6 +131,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btn0.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -128,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btnSuma.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -136,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btnMenos.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -144,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btnMultiplicar.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 
@@ -152,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String textButton = btnDividir.getText().toString();
                 Log.d("TAG_", "BUTTON PRESIONADO: " + textButton);
+                textMostrar.setText(textButton);
             }
         });
 

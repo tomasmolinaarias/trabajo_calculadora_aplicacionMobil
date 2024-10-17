@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <TextView
+        android:id="@+id/textMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="70dp"
+        android:gravity="center" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
